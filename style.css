@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    border: 0;
+}
+
+header {
+    margin: 0.5rem 0.8rem;
+}
+
+.banner {
+    text-align: center;
+    font-size: 50px;
+    padding: 1rem;
+    background-color: #013dc4;
+    ;
+    color: #e2d3f4;
+    margin-bottom: 0.2rem;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: darkcyan;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: bisque;
+    padding: 1rem;
+}
+
+.menu a:hover {
+    background-color: darkorange;
+}
+
+.submenu a:hover {
+    margin: .5rem;
+    background-color: rgb(110, 13, 104);
+}
+
+.sub {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent darkmagenta transparent;
+    border-width: .5rem;
+    top: -.9rem;
+    left: 20%;
+    margin: 0;
+}
+
+
+.submenu>li>a {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    background-color: darkmagenta;
+    position: absolute;
+    min-width: 200%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.sub:hover .submenu {
+    display: block;
+}
+
+.find {
+    padding: 1rem;
+    margin-left: auto;
+}
+
+.find button {
+    border-style: none;
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+.find input {
+    border-radius: 8px;
+}
+
+footer {
+    background-color: aqua;
+    color: cornsilk;
+}
