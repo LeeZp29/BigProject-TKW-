@@ -1,12 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: large;
+    font-size: 20px;
+    font-weight: 400;
     border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 225, 180);
 }
 
 header {
     margin: 0.5rem 0.8rem;
+}
+
+nav{
+    margin: 0.5rem 0.8rem;  
 }
 
 .banner {
@@ -22,10 +32,13 @@ header {
 .menu {
     list-style-type: none;
     background-color: darkcyan;
+    justify-content: space-between !important;
 }
 
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu a {
@@ -78,19 +91,34 @@ header {
     display: block;
 }
 
-.find {
-    padding: 1rem;
-    margin-left: auto;
+.find input{
+    transition: 0.8s;
+    width: 0;
+    background: rgb(44, 182, 150);
+    border: none;
+    outline: none;
+
 }
 
-.find button {
-    border-style: none;
-    cursor: pointer;
-    background-color: darkcyan;
+input::placeholder {
+    color:beige;
 }
 
-.find input {
-    border-radius: 8px;
+.find a{
+    text-align: center;
+}
+
+.find:hover input 
+{
+    width: 13rem;
+    padding: .7rem;
+    border-bottom: 1.8px solid rgba(204, 255, 0, 0.668);
+}
+
+.find input:focus{
+    width: 13rem;
+    padding: .7rem;
+    border-bottom: 1.8px solid rgba(204, 255, 0, 0.668);
 }
 
 footer {
