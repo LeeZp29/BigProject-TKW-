@@ -7,26 +7,23 @@
 }
 
 body {
-  background-color: rgb(216, 214, 204);
+  background-color: aquamarine;
 }
 
 .layout {
   margin: 0.5rem 0.8rem;
 }
 
-.banner {
-  text-align: center;
-  font-size: 50px;
-  padding: 1rem;
-  background-color: #013dc4;
-  color: #e2d3f4;
-  margin-bottom: 0.2rem;
+header > img {
+  width: 100%;
+  border-radius: 20px;
 }
 
 .menu {
   list-style-type: none;
   background-color: darkcyan;
   justify-content: space-between !important;
+  border-radius: 10px;
 }
 
 .flex {
@@ -44,6 +41,7 @@ body {
 
 .menu a:hover {
   background-color: darkorange;
+  border-radius: 10px;
 }
 
 .submenu a:hover {
@@ -104,21 +102,24 @@ input::placeholder {
   width: 13rem;
   padding: 0.7rem;
   border-bottom: 1.8px solid rgba(204, 255, 0, 0.668);
+  border-radius: 5px;
 }
 
 .find input:focus {
   width: 13rem;
   padding: 0.7rem;
   border-bottom: 1.8px solid rgba(204, 255, 0, 0.668);
+  border-radius: 5px;
 }
 
 /* footer */
 
 footer {
-  background-color: rgb(57, 98, 155);
-  color: blanchedalmond;
+  background-color: lightskyblue;
+  color: black;
   font-weight: 600;
   padding: 1.5rem;
+  border-radius: 10px;
 }
 
 /* main */
