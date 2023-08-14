@@ -123,6 +123,19 @@ footer {
   border-radius: 10px;
 }
 
+.social-media {
+  margin-left: 10%;
+}
+
+.footer-content {
+  margin-left: 10%;
+}
+
+footer img {
+  margin-left: 10%;
+  height: 10rem;
+}
+
 /* main */
 
 .gotoTopbtn {
