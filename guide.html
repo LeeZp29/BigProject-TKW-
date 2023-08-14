@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="tap chi khoa hoc, tap chi" />
+    <title>Tạp Chí Khoa Học</title>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/icon.jpg" />
+  </head>
+
+  <body>
+    <header class="layout">
+      <img src="images/banner.jpg" />
+    </header>
+
+    <nav class="layout">
+      <ul class="flex menu">
+        <li class="flex">
+          <div>
+            <a href="index.html"
+              ><i class="fa-solid fa-house-user"></i> Trang chủ</a
+            >
+          </div>
+          <div>
+            <a href="about.html">Giới thiệu</a>
+          </div>
+          <div>
+            <a href="guide.html">Hướng dẫn</a>
+          </div>
+          <div>
+            <a href="news.html"><i class="fa-solid fa-bell"></i> Thông báo</a>
+          </div>
+          <div>
+            <a href="contact.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+          </div>
+          <div class="sub">
+            <a class="flex quote" href="#">Chủ đề &triangledown;</a>
+            <ul class="submenu menu">
+              <li><a href="#">Trí tuệ nhân tạo</a></li>
+              <li><a href="#">Block chain</a></li>
+              <li><a href="#">Big data</a></li>
+              <li><a href="#">Thực tế ảo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="find flex">
+          <input type="text" placeholder="  Tìm kiếm..." />
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="layout">
+      <section>
+        <div class="container">
+          <h1>Hướng dẫn</h1>
+          <p class="content">
+            Chào mừng bạn đến với trang web tạp chí khoa học của chúng tôi!
+            Trang web này cung cấp một kho tàng thông tin vô cùng quý báu về các
+            nghiên cứu, bài báo và thông tin liên quan đến các lĩnh vực khoa học
+            đa dạng. Dưới đây là hướng dẫn sử dụng trang web để bạn có thể tận
+            dụng hết các tính năng và nguồn thông tin mà chúng tôi cung cấp:
+          </p>
+          <ul class="content">
+            <li>
+              <strong>Tìm kiếm nghiên cứu và bài báo:</strong> Trang web của
+              chúng tôi thường có một khung tìm kiếm ở phía trên cùng hoặc ở
+              trung tâm của trang chính. Bạn có thể nhập từ khóa, tên tác giả
+              hoặc chủ đề cụ thể để tìm kiếm các nghiên cứu và bài báo liên
+              quan.
+            </li>
+            <li>
+              <strong>Duyệt danh mục chủ đề:</strong> Trang web thường có một
+              danh mục hoặc thể loại chủ đề khoa học khác nhau. Bạn có thể duyệt
+              qua các chủ đề này để tìm kiếm các bài viết theo chủ đề mà bạn
+              quan tâm.
+            </li>
+            <li>
+              <strong>Đọc bài báo và nghiên cứu:</strong> Khi bạn tìm thấy một
+              bài báo hoặc nghiên cứu bạn quan tâm, nhấp vào tiêu đề để mở nội
+              dung chi tiết. Trang web có thể cung cấp tóm tắt, trích dẫn, và
+              liên kết tải về phiên bản đầy đủ của bài báo.
+            </li>
+            <li>
+              <strong>Liên hệ và góp ý:</strong> Nếu bạn có câu hỏi, ý kiến đóng
+              góp hoặc muốn liên hệ với tác giả hoặc biên tập viên, thường trang
+              web sẽ có thông tin liên hệ hoặc biểu mẫu liên hệ.
+            </li>
+            <li>
+              <strong>Theo dõi thông tin mới nhất:</strong> Đừng quên xem phần
+              tin tức hoặc blog để cập nhật thông tin mới nhất về các sự kiện,
+              bài báo mới, và phát triển trong lĩnh vực khoa học.
+            </li>
+          </ul>
+          <p class="content" style="margin-top: -2rem">
+            Nhớ kiểm tra menu điều hướng hoặc chân trang trang web để tìm hiểu
+            thêm về các tính năng khác mà trang web có thể cung cấp. Chúc bạn có
+            những trải nghiệm thú vị và hữu ích trên trang web tạp chí khoa học
+            của chúng tôi!
+          </p>
+        </div>
+      </section>
+      <div onclick="gotoTop()" class="gotoTopbtn">
+        <i class="fa-solid fa-circle-up"></i>
+      </div>
+    </main>
+
+    <footer class="layout">
+      <div class="flex">
+        <p>Tạp chí khoa học &copy; 2023</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -6,7 +6,6 @@
     <meta name="keywords" content="tap chi khoa hoc, tap chi" />
     <title>Tạp Chí Khoa Học</title>
     <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -24,19 +23,21 @@
       <ul class="flex menu">
         <li class="flex">
           <div>
-            <a href="#"><i class="fa-solid fa-house-user"></i> Trang chủ</a>
+            <a href="index.html"
+              ><i class="fa-solid fa-house-user"></i> Trang chủ</a
+            >
           </div>
           <div>
-            <a href="#">Giới thiệu</a>
+            <a href="about.html">Giới thiệu</a>
           </div>
           <div>
-            <a href="#">Hướng dẫn</a>
+            <a href="guide.html">Hướng dẫn</a>
           </div>
           <div>
-            <a href="#"><i class="fa-solid fa-bell"></i> Thông báo</a>
+            <a href="news.html"><i class="fa-solid fa-bell"></i> Thông báo</a>
           </div>
           <div>
-            <a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+            <a href="contact.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
           </div>
           <div class="sub">
             <a class="flex quote" href="#">Chủ đề &triangledown;</a>
@@ -56,9 +57,10 @@
     </nav>
 
     <main class="layout">
-      <section>
-        <div></div>
-      </section>
+      <section></section>
+      <div onclick="gotoTop()" class="gotoTopbtn">
+        <i class="fa-solid fa-circle-up"></i>
+      </div>
     </main>
 
     <footer class="layout">
@@ -66,5 +68,7 @@
         <p>Tạp chí khoa học &copy; 2023</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

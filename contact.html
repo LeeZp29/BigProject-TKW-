@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="tap chi khoa hoc, tap chi" />
+    <title>Tạp Chí Khoa Học</title>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/icon.jpg" />
+  </head>
+
+  <body>
+    <header class="layout">
+      <img src="images/banner.jpg" />
+    </header>
+
+    <nav class="layout">
+      <ul class="flex menu">
+        <li class="flex">
+          <div>
+            <a href="index.html"
+              ><i class="fa-solid fa-house-user"></i> Trang chủ</a
+            >
+          </div>
+          <div>
+            <a href="about.html">Giới thiệu</a>
+          </div>
+          <div>
+            <a href="guide.html">Hướng dẫn</a>
+          </div>
+          <div>
+            <a href="news.html"><i class="fa-solid fa-bell"></i> Thông báo</a>
+          </div>
+          <div>
+            <a href="contact.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+          </div>
+          <div class="sub">
+            <a class="flex quote" href="#">Chủ đề &triangledown;</a>
+            <ul class="submenu menu">
+              <li><a href="#">Trí tuệ nhân tạo</a></li>
+              <li><a href="#">Block chain</a></li>
+              <li><a href="#">Big data</a></li>
+              <li><a href="#">Thực tế ảo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="find flex">
+          <input type="text" placeholder="  Tìm kiếm..." />
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="layout">
+      <section></section>
+      <div onclick="gotoTop()" class="gotoTopbtn">
+        <i class="fa-solid fa-circle-up"></i>
+      </div>
+    </main>
+
+    <footer class="layout">
+      <div class="flex">
+        <p>Tạp chí khoa học &copy; 2023</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

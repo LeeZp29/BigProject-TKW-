@@ -4,6 +4,7 @@
   font-size: 20px;
   border: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -123,3 +124,56 @@ footer {
 }
 
 /* main */
+
+.gotoTopbtn {
+  position: fixed;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-radius: 2px solid white;
+  bottom: 1.2rem;
+  right: 0.7rem;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.gotoTopbtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* container */
+.container {
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 0.3rem;
+}
+
+.container * {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-bottom: 0.2rem dotted gray;
+  margin: 1rem 2rem 0.3rem;
+}
+
+.content {
+  margin: 1rem 4rem;
+  padding: 1.5rem;
+  font-weight: 400;
+}
+
+::marker {
+  font-weight: 700;
+}
+
+ul.content {
+  list-style-type: number;
+  margin-top: -2.5rem;
+}
