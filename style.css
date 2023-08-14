@@ -53,6 +53,7 @@ header > img {
 .sub {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .submenu::before {
@@ -66,9 +67,9 @@ header > img {
   margin: 0;
 }
 
-.submenu > li > a {
+/* .submenu > li > a {
   display: block;
-}
+} */
 
 .submenu {
   display: none;
@@ -79,7 +80,7 @@ header > img {
   border-radius: 5px;
 }
 
-.sub:hover .submenu {
+.show {
   display: block;
 }
 
