@@ -33,6 +33,10 @@ header > img {
   align-items: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .menu a {
   display: block;
   text-decoration: none;
@@ -66,10 +70,6 @@ header > img {
   left: 20%;
   margin: 0;
 }
-
-/* .submenu > li > a {
-  display: block;
-} */
 
 .submenu {
   display: none;
@@ -181,6 +181,7 @@ footer img {
   margin: 1rem 4rem;
   padding: 1.5rem;
   font-weight: 400;
+  text-align: center;
 }
 
 ::marker {
