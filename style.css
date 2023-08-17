@@ -98,6 +98,7 @@ input::placeholder {
 
 .find a {
   text-align: center;
+  cursor: pointer;
 }
 
 .find:hover input {

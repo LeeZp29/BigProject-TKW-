@@ -4,7 +4,14 @@ function gotoTop()
 }
 
 function showSubmenu() {
-    var sub = document.getElementById('submenu');
-    console.log(sub.classList);
+    let sub = document.getElementById('submenu');
     sub.classList.toggle('show');
+    console.log(sub.classList);
 }
+
+document.ondblclick = function () {
+    let sub = document.getElementById('submenu');
+    sub.classList.remove('show');
+    console.log(sub.classList);
+};
+ 
