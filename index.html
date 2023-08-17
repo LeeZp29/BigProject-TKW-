@@ -5,41 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="tap chi khoa hoc, tap chi" />
     <title>Tạp Chí Khoa Học</title>
-    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/icon.jpg" />
+    <link rel="shortcut icon" href="images/icon.png" />
   </head>
 
-  <body>
+  <body class="show-content">
     <header class="layout">
-      <img src="images/banner.jpg" />
+      <div class="banner">
+        <img src="images/bannerlll.png" />
+      </div>
     </header>
 
     <nav class="layout">
       <ul class="flex menu">
         <li class="flex">
-          <div>
+          <div class="menu-item sub">
             <a href="index.html"
               ><i class="fa-solid fa-house-user"></i> Trang chủ</a
             >
           </div>
-          <div>
+          <div class="menu-item sub">
             <a href="about.html">Giới thiệu</a>
           </div>
-          <div>
+          <div class="menu-item sub">
             <a href="guide.html">Hướng dẫn</a>
           </div>
-          <div>
+          <div class="menu-item sub">
             <a href="news.html"><i class="fa-solid fa-bell"></i> Thông báo</a>
           </div>
-          <div>
+          <div class="menu-item sub">
             <a href="contact.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
           </div>
-          <div onclick="showSubmenu()" class="sub">
+          <div class="menu-item sub" id="submenu-trigger">
             <a class="flex" href="#">Chủ đề &triangledown;</a>
             <ul id="submenu" class="submenu menu">
               <li><a href="AI.html">Trí tuệ nhân tạo</a></li>
@@ -58,35 +60,91 @@
 
     <main class="layout">
       <section>
-        <div class="container">
-          <h1>MỤC ĐÍCH</h1>
-          <p class="content">
-            Chào mừng bạn đến với trang web tạp chí khoa học độc đáo và đa dạng!
-            Chúng tôi tự hào giới thiệu đến bạn một nguồn thông tin uy tín và
-            đầy kiến thức về các lĩnh vực khoa học đa dạng, từ khoa học tự nhiên
-            đến khoa học xã hội, từ công nghệ đến y học, và nhiều lĩnh vực khác
-            nữa
-            <br />
-            <br />
-            Tại trang web của chúng tôi, bạn sẽ được tiếp cận với những bài báo,
-            nghiên cứu, và bài viết chất lượng cao từ các chuyên gia hàng đầu
-            trong ngành. Chúng tôi cam kết mang đến cho bạn những thông tin mới
-            nhất về các phát hiện khoa học, xu hướng nghiên cứu, và các dự án
-            đang được thực hiện trên khắp thế giới.
-            <br />
-            <br />
-            Với giao diện trực quan và dễ sử dụng, bạn có thể dễ dàng duyệt qua
-            các danh mục chủ đề, tìm kiếm thông tin theo từ khoá, và tương tác
-            với cộng đồng khoa học thông qua các bình luận và thảo luận. Chúng
-            tôi cũng cung cấp dịch vụ đăng ký tin tức để bạn luôn cập nhật về
-            những thông tin mới nhất.
-            <br />
-            <br />
-            Dù bạn là một nhà nghiên cứu, sinh viên, hay ai đang quan tâm đến
-            những tiến bộ khoa học, trang web tạp chí khoa học của chúng tôi
-            luôn sẵn sàng đồng hành cùng bạn trên hành trình khám phá kiến thức
-            và hiểu biết sâu rộ về thế giới xung quanh chúng ta.
-          </p>
+        <div class="flex">
+          <div class="side">
+            <img style="border: 0.2rem solid" src="images/book.jpg" />
+          </div>
+          <div class="container">
+            <h2>
+              <img src="gif/dentat.png" id="toggleContent1" data-state="old" />
+              <p>MỤC ĐÍCH</p>
+            </h2>
+            <p class="content">
+              Chào mừng bạn đến với trang web tạp chí khoa học độc đáo và đa
+              dạng! Chúng tôi tự hào giới thiệu đến bạn một nguồn thông tin uy
+              tín và đầy kiến thức về các lĩnh vực khoa học đa dạng, từ khoa học
+              tự nhiên đến khoa học xã hội, từ công nghệ đến y học, và nhiều
+              lĩnh vực khác nữa
+              <br />
+              <br />
+              Tại trang web của chúng tôi, bạn sẽ được tiếp cận với những bài
+              báo, nghiên cứu, và bài viết chất lượng cao từ các chuyên gia hàng
+              đầu trong ngành. Chúng tôi cam kết mang đến cho bạn những thông
+              tin mới nhất về các phát hiện khoa học, xu hướng nghiên cứu, và
+              các dự án đang được thực hiện trên khắp thế giới.
+              <br />
+              <br />
+              Với giao diện trực quan và dễ sử dụng, bạn có thể dễ dàng duyệt
+              qua các danh mục chủ đề, tìm kiếm thông tin theo từ khoá, và tương
+              tác với cộng đồng khoa học thông qua các bình luận và thảo luận.
+              Chúng tôi cũng cung cấp dịch vụ đăng ký tin tức để bạn luôn cập
+              nhật về những thông tin mới nhất.
+              <br />
+              <br />
+              Dù bạn là một nhà nghiên cứu, sinh viên, hay ai đang quan tâm đến
+              những tiến bộ khoa học, trang web tạp chí khoa học của chúng tôi
+              luôn sẵn sàng đồng hành cùng bạn trên hành trình khám phá kiến
+              thức và hiểu biết sâu rộ về thế giới xung quanh chúng ta.
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="container">
+            <h2>
+              <img src="gif/dentat.png" id="toggleContent2" data-state="old" />
+              <p>CÁC LĨNH VỰC CHÍNH</p>
+            </h2>
+            <p class="content">
+              <strong>Trí Tuệ Nhân Tạo</strong>
+              <br />
+              Trí tuệ nhân tạo là một lĩnh vực của khoa học máy tính tập trung
+              vào việc phát triển máy tính và hệ thống có khả năng thực hiện các
+              nhiệm vụ thông minh mà cần sự can thiệp ít hoặc không cần can
+              thiệp của con người. Các ứng dụng của trí tuệ nhân tạo bao gồm xử
+              lý ngôn ngữ tự nhiên, nhận dạng hình ảnh, tự động lái xe, dự đoán
+              và lập kế hoạch.
+              <br />
+              <br />
+              <strong>Block Chain</strong>
+              <br />
+              Blockchain là một công nghệ lưu trữ và truyền tải dữ liệu dưới
+              dạng các "block" liên kết với nhau thông qua các khối gọi là
+              "chain." Mỗi khối chứa thông tin về giao dịch và được xác thực
+              bằng cách sử dụng mã hóa. Blockchain có khả năng đảm bảo tính toàn
+              vẹn của dữ liệu và giúp tăng cường tính an toàn và minh bạch trong
+              các giao dịch điện tử, chẳng hạn như tiền điện tử (ví dụ: Bitcoin)
+              hoặc quản lý chuỗi cung ứng.
+              <br />
+              <br />
+              <strong>Big Data</strong>
+              <br />
+              Big Data (Dữ liệu lớn) đề cập đến khối lượng lớn dữ liệu phức tạp
+              và đa dạng mà không thể dễ dàng xử lý bằng các phương pháp truyền
+              thống. Xử lý Big Data liên quan đến việc thu thập, lưu trữ, phân
+              tích và trích xuất thông tin từ những tập dữ liệu lớn để đưa ra
+              thông tin hữu ích cho việc ra quyết định và dự đoán xu hướng.
+              <br />
+              <br />
+              <strong>Thực Tế Ảo</strong>
+              <br />
+              Thực tế ảo là một môi trường giả tưởng được tạo ra bằng cách sử
+              dụng công nghệ để mô phỏng các trải nghiệm và tương tác thực tế.
+              Người dùng có thể tương tác với môi trường ảo thông qua các thiết
+              bị như kính VR hoặc tay cầm điều khiển đặc biệt. Ứng dụng của thực
+              tế ảo bao gồm giáo dục, giải trí, y tế, thiết kế, và nhiều lĩnh
+              vực khác.
+            </p>
+          </div>
         </div>
       </section>
       <div onclick="gotoTop()" class="gotoTopbtn">
