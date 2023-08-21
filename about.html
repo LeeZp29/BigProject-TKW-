@@ -11,35 +11,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="shortcut icon" href="image/icon.png" />
   </head>
 
-  <body>
+  <body class="show-content">
     <header class="layout">
-      <img src="images/bannerlll.png" />
+      <div class="banner">
+        <img src="gif/BANNER.gif" />
+      </div>
     </header>
 
     <nav class="layout">
       <ul class="flex menu">
         <li class="flex">
-          <div>
+          <div class="menu-item sub">
             <a href="index.html"
               ><i class="fa-solid fa-house-user"></i> Trang chủ</a
             >
           </div>
-          <div>
-            <a href="about.html">Giới thiệu</a>
+          <div class="menu-item sub">
+            <a href="about.html"
+              ><i class="fa-solid fa-scroll"></i> Giới thiệu</a
+            >
           </div>
-          <div>
-            <a href="guide.html">Hướng dẫn</a>
+          <div class="menu-item sub">
+            <a href="guide.html"
+              ><i class="fa-solid fa-newspaper"></i> Hướng dẫn</a
+            >
           </div>
-          <div>
-            <a href="news.html"><i class="fa-solid fa-bell"></i> Thông báo</a>
-          </div>
-          <div>
+          <div class="menu-item sub">
             <a href="contact.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
           </div>
-          <div onclick="showSubmenu()" class="sub">
+          <div class="menu-item sub" id="submenu-trigger">
             <a class="flex" href="#">Chủ đề &triangledown;</a>
             <ul id="submenu" class="submenu menu">
               <li><a href="AI.html">Trí tuệ nhân tạo</a></li>
@@ -57,49 +60,58 @@
     </nav>
 
     <main class="layout">
-      <section>
-        <div class="container">
-          <h1>Giới thiệu</h1>
-          <p class="content">
-            Chào mừng bạn đến với trang web tạp chí khoa học của chúng tôi!
-            <br /><br />
-            Chúng tôi hân hạnh giới thiệu đến bạn một không gian tri thức đa
-            dạng và phong phú, nơi mà sự tò mò và khám phá không bao giờ ngừng.
-            Trang web tạp chí khoa học của chúng tôi là nơi tụ hội những tinh
-            hoa và tầm nhìn của các nhà nghiên cứu, chuyên gia và đam mê khoa
-            học từ khắp nơi trên thế giới.
-            <br /><br />
-            Với mục tiêu chia sẻ và lan tỏa kiến thức, chúng tôi mang đến cho
-            bạn những bài viết chất lượng cao về các lĩnh vực khoa học đa dạng
-            như vật lý, hóa học, sinh học, toán học, khoa học máy tính và nhiều
-            lĩnh vực khác. Bất kỳ ai đang tìm kiếm sự hiểu biết sâu rộng về thế
-            giới xung quanh đều có thể tìm thấy những thông tin hấp dẫn và đáng
-            giá tại đây.
-            <br /><br />
-            Trang web của chúng tôi không chỉ đơn thuần là một nơi cung cấp kiến
-            thức mà còn là một nơi giao lưu và kết nối cộng đồng yêu thích khoa
-            học. Bạn có thể tham gia thảo luận, đặt câu hỏi và chia sẻ quan điểm
-            với các tác giả và đồng độc giả, từ đó tạo ra một môi trường trao
-            đổi học hỏi đầy sôi nổi.
-            <br /><br />
-            Chúng tôi hy vọng rằng bạn sẽ cảm thấy thú vị và có được những thông
-            tin bổ ích từ trang web tạp chí khoa học của chúng tôi. Hãy cùng
-            chúng tôi lan tỏa niềm đam mê với khoa học và khám phá vô tận của
-            tri thức!
-            <br /><br />
-            Cảm ơn bạn đã đồng hành cùng chúng tôi trên hành trình khám phá sự
-            kỳ diệu của khoa học và kiến thức!
-          </p>
+      <section id="research">
+        <div class="flex">
+          <div class="side">
+            <img src="image/book.png" />
+          </div>
+          <div class="container">
+            <h2>
+              <img src="gif/dentat.png" id="toggleContent1" data-state="old" />
+              <img src="gif/output-onlinegiftools.gif" id="hd" />
+              <p>CHÚNG TÔI CÓ NHỮNG GÌ?</p>
+            </h2>
+            <p class="content">
+              Được dẫn đầu bởi 2 chuyên gia hàng đầu trong ngành: đã xuất sắc
+              đạt 12 năm học sinh giỏi, hoàn thiện tất cả chương trình học từ
+              khi còn ngồi trên ghế nhà trường, chúng tôi là Tiến Sư-Phan Lê
+              Nguyên và Giáo sĩ-Nguyễn Hoàng Triệu Vỹ.
+              <br /><br />
+              Chúng tôi hân hạnh giới thiệu đến bạn một không gian tri thức đa
+              dạng và phong phú, nơi mà sự tò mò và khám phá không bao giờ
+              ngừng. Trang web tạp chí khoa học của chúng tôi là nơi tụ hội
+              những tinh hoa và tầm nhìn của các nhà nghiên cứu, chuyên gia và
+              đam mê khoa học từ khắp nơi trên thế giới.
+              <br /><br />
+              Với mục tiêu chia sẻ và lan tỏa kiến thức, chúng tôi mang đến cho
+              bạn những bài viết chất lượng cao về các lĩnh vực khoa học đa dạng
+              như vật lý, hóa học, sinh học, toán học, khoa học máy tính và
+              nhiều lĩnh vực khác. Bất kỳ ai đang tìm kiếm sự hiểu biết sâu rộng
+              về thế giới xung quanh đều có thể tìm thấy những thông tin hấp dẫn
+              và đáng giá tại đây.
+              <br /><br />
+              Trang web của chúng tôi không chỉ đơn thuần là một nơi cung cấp
+              kiến thức mà còn là một nơi giao lưu và kết nối cộng đồng yêu
+              thích khoa học. Bạn có thể tham gia thảo luận, đặt câu hỏi và chia
+              sẻ quan điểm với các tác giả và đồng độc giả, từ đó tạo ra một môi
+              trường trao đổi học hỏi đầy sôi nổi.
+              <br /><br />
+              Chúng tôi hy vọng rằng bạn sẽ cảm thấy thú vị và có được những
+              thông tin bổ ích từ trang web tạp chí khoa học của chúng tôi. Hãy
+              cùng chúng tôi lan tỏa niềm đam mê với khoa học và khám phá vô tận
+              của tri thức!
+              <br /><br />
+              Cảm ơn bạn đã đồng hành cùng chúng tôi trên hành trình khám phá sự
+              kỳ diệu của khoa học và kiến thức!
+            </p>
+          </div>
         </div>
       </section>
-      <div onclick="gotoTop()" class="gotoTopbtn">
-        <i class="fa-solid fa-circle-up"></i>
-      </div>
     </main>
 
     <footer class="layout flex">
       <div>
-        <img src="images/logo.png" />
+        <img src="image/logo.png" />
       </div>
       <div class="footer-content">
         <div class="editorial-team">
@@ -135,7 +147,6 @@
         <p>Mã số thuế: 123456789</p>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

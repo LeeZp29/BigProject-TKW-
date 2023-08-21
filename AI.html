@@ -5,36 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="tap chi khoa hoc, tap chi" />
     <title>Tạp Chí Khoa Học</title>
-    <script src="jquery-3.7.0.min.js"></script>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="shortcut icon" href="image/icon.png" />
   </head>
-  <body id="AI">
+
+  <body id="AI" class="show-content">
     <header class="layout">
-      <img src="images/bannerlll.png" />
+      <div class="banner">
+        <img src="gif/BANNER.gif" />
+      </div>
     </header>
     <nav class="layout">
       <ul class="flex menu">
         <li class="flex">
-          <div>
+          <div class="menu-item sub">
             <a href="index.html"
               ><i class="fa-solid fa-house-user"></i> Trang chủ</a
             >
           </div>
-          <div>
-            <a href="about.html">Giới thiệu</a>
+          <div class="menu-item sub">
+            <a href="about.html"
+              ><i class="fa-solid fa-scroll"></i> Giới thiệu</a
+            >
           </div>
-          <div>
-            <a href="guide.html">Hướng dẫn</a>
+          <div class="menu-item sub">
+            <a href="guide.html"
+              ><i class="fa-solid fa-newspaper"></i> Hướng dẫn</a
+            >
           </div>
-          <div>
+          <div class="menu-item sub">
             <a href="contact.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
           </div>
-          <div onclick="showSubmenu()" class="sub">
+          <div class="menu-item sub" id="submenu-trigger">
             <a class="flex" href="#">Chủ đề &triangledown;</a>
             <ul id="submenu" class="submenu menu">
               <li><a href="AI.html">Trí tuệ nhân tạo</a></li>
@@ -45,79 +52,42 @@
           </div>
         </li>
         <li class="find flex">
-          <input type="text" placeholder="  Tìm kiếm..." />
+          <input type="text" placeholder="Nhập tên bài báo cần tìm...." />
           <a><i class="fa-solid fa-magnifying-glass"></i></a>
         </li>
       </ul>
     </nav>
+
     <main class="layout">
-      <section>
-        <div class="container">
-          <h1>CÁC LĨNH VỰC CHÍNH</h1>
-          <p class="content">
-            <strong>Trí Tuệ Nhân Tạo</strong>
-            <br />
-            Trí tuệ nhân tạo là một lĩnh vực của khoa học máy tính tập trung vào
-            việc phát triển máy tính và hệ thống có khả năng thực hiện các nhiệm
-            vụ thông minh mà cần sự can thiệp ít hoặc không cần can thiệp của
-            con người. Các ứng dụng của trí tuệ nhân tạo bao gồm xử lý ngôn ngữ
-            tự nhiên, nhận dạng hình ảnh, tự động lái xe, dự đoán và lập kế
-            hoạch.
-            <br />
-            <br />
-          </p>
-        </div>
-        <div class="container">
-          <h1>
-            A review of possible effects of cognitive biases on interpretation
-            of rule-based machine learning models
-          </h1>
-          <p class="content">
-            Author:Tomáš Kliegr, Štěpán Bahník, Johannes Fürnkranz
-          </p>
-          <p class="content">
-            While the interpretability of machine learning models is often
-            equated with their mere syntactic comprehensibility, we think that
-            interpretability goes beyond that, and that human interpretability
-            should also be investigated from the point of view of cognitive
-            science. The goal of this paper is to discuss to what extent
-            cognitive biases may affect human understanding of interpretable
-            machine learning models, in particular of logical rules discovered
-            from data. Twenty cognitive biases are covered, as are possible
-            debiasing techniques that can be adopted by designers of machine
-            learning algorithms and software. Our review transfers results
-            obtained in cognitive psychology to the domain of machine learning,
-            aiming to bridge the current gap between these two areas. It needs
-            to be followed by empirical studies specifically focused on the
-            machine learning domain.
-            <div class="flex research">
-            <a
-              href="https://www.sciencedirect.com/science/article/pii/S0004370221000096"
-              >research-link</a
-            >
-            |
-            <a
-              href="https://www.sciencedirect.com/science/article/pii/S0004370221000096/pdfft?md5=67b3a0c5e6c59bd6167b0e6d9e584f3f&pid=1-s2.0-S0004370221000096-main.pdf"
-              >pdf-file</a
-            >
-              </div>
-          </p>
-        </div>
-
-        <div class="container">
-          <div class="content">
-
-            <a href="" onclick="">A review of possible effects of cognitive biases on interpretation of rule-based machine learning models</a>
+      <section id="research">
+        <div class="flex">
+          <div class="side">
+            <img src="image/book.png" />
+          </div>
+          <div class="container">
+            <h2>
+              <img src="gif/dentat.png" id="toggleContent1" data-state="old" />
+              <img src="gif/output-onlinegiftools.gif" id="hd" />
+              <p>CÁC BÀI BÁO MỚI NHẤT</p>
+            </h2>
+            <p class="content">
+              <strong>Trí Tuệ Nhân Tạo</strong>
+              <br />
+              Trí tuệ nhân tạo là một lĩnh vực của khoa học máy tính tập trung
+              vào việc phát triển máy tính và hệ thống có khả năng thực hiện các
+              nhiệm vụ thông minh mà cần sự can thiệp ít hoặc không cần can
+              thiệp của con người. Các ứng dụng của trí tuệ nhân tạo bao gồm xử
+              lý ngôn ngữ tự nhiên, nhận dạng hình ảnh, tự động lái xe, dự đoán
+              và lập kế hoạch.
+            </p>
           </div>
         </div>
+        <div id="research-show"></div>
       </section>
-      <div onclick="gotoTop()" class="gotoTopbtn">
-        <i class="fa-solid fa-circle-up"></i>
-      </div>
     </main>
     <footer class="layout flex">
       <div>
-        <img src="images/logo.png" />
+        <img src="image/logo.png" />
       </div>
       <div class="footer-content">
         <div class="editorial-team">
@@ -153,6 +123,7 @@
         <p>Mã số thuế: 123456789</p>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
